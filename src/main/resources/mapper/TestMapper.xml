@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spring.demo.mapper.TestMapper">
+
+    <insert id="insertOne">
+        insert into xdx_test_one(user_id) values (#{userId})
+    </insert>
+
+    <insert id="insertTwo">
+        insert into xdx_test_two(user_id) values (#{userId})
+    </insert>
+
+    <delete id="deleteOne">
+        DELETE
+        FROM xdx_test_one
+        WHERE user_id = #{userId}
+    </delete>
+
+    <delete id="deleteTwo">
+        DELETE
+        FROM xdx_test_two
+        WHERE user_id = #{userId}
+    </delete>
+
+</mapper>
+
